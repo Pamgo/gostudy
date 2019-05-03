@@ -1,9 +1,16 @@
-package main
+package vec
 
 import "math"
 
 type Vec2 struct {
 	X, Y float32
+}
+
+func (v Vec2) Sub(other Vec2) Vec2 {
+	return Vec2{
+		v.X - other.X,
+		v.Y - other.Y,
+	}
 }
 
 // 使用矢量加上另一个矢量，生成新的矢量
