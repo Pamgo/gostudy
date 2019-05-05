@@ -1,6 +1,5 @@
-package player
+package main
 
-import ""
 
 type Player struct {
 	currPos Vec2   // 当前位置
