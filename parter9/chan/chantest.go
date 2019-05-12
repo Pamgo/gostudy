@@ -1,1 +1,6 @@
-package _chan
+package main
+
+func main()  {
+	ch := make(chan int)
+	ch <- 0
+}
